@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+
+# Logs
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Local tooling (just in case)
+node_modules/
