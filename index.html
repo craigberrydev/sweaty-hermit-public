@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Sweaty Hermit</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <nav id="menu"></nav>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch("/data/main-menu.json")
+        .then((r) => r.json())
+        .then((menu) => {
+          const nav = document.getElementById("menu");
+
+          menu.forEach((item) => {
+            const link = document.createElement("a");
+            link.href = item.url;
+            link.textContent = item.title;
+            link.style.marginRight = "10px";
+            nav.appendChild(link);
+          });
+        });
+    </script>
+  </body>
+</html>
