@@ -1,5 +1,4 @@
 [
   { "title": "Home", "url": "/" },
-  { "title": "Projects", "url": "/" },
-  { "title": "Blog", "url": "/" }
+  { "title": "Projects", "url": "/" }
 ]
