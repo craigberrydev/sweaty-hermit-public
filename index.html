@@ -7,23 +7,25 @@
     <title>Sweaty Hermit</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <nav id="menu"></nav>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      fetch("/data/main-menu.json")
-        .then((r) => r.json())
-        .then((menu) => {
-          const nav = document.getElementById("menu");
+    <h1>Sweaty Hermit</h1>
 
-          menu.forEach((item) => {
-            const link = document.createElement("a");
-            link.href = item.url;
-            link.textContent = item.title;
-            link.style.marginRight = "10px";
-            nav.appendChild(link);
-          });
-        });
-    </script>
+    <nav id="menu"></nav>
+
+    <p>
+      Software engineer with over a decade of experience designing and
+      delivering cross-platform applications, embedded firmware, and distributed
+      systems. Specializing in local-first desktop tools and experienced in
+      taking projects from concept to deployment across desktop, mobile, and
+      web. I'm based in Idaho, USA and open to remote work worldwide.
+    </p>
+
+    <p>
+      Whether you are looking to build tools for your company, improve existing
+      software or bring a unique project to life, I'm here to help
+    </p>
+
+    <p>© 2026 Sweaty Hermit. All rights reserved.</p>
+
+    <script src="js/home.js"></script>
   </body>
 </html>
